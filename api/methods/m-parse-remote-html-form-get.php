@@ -1,6 +1,6 @@
 <?php
 
-$route = '/api/';
+$route = '/parse-remote-html-form/';
 $app->get($route, function ()  use ($app){
 
 	$ReturnObject = array();
