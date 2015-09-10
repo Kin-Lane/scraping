@@ -1,2 +1,2 @@
-# scraping
-This is my scraping API
+# Scraping
+This is the scraping API.
