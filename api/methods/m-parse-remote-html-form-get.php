@@ -1,5 +1,4 @@
 <?php
-
 $route = '/parse-remote-html-form/';
 $app->get($route, function ()  use ($app){
 
@@ -11,7 +10,15 @@ $app->get($route, function ()  use ($app){
 	if(isset($params['target']))
 		{
 		$target = $params['target'];
-		$referrer = $params['referrer'];
+
+		if(isset($params['target']))
+			{
+			$referrer = $params['referrer'];
+			}
+		else
+			{
+			$referrer = "";
+			}
 
 		$web_page = http_get($target, $referrer);
 
