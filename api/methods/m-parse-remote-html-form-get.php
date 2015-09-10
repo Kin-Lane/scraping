@@ -11,7 +11,7 @@ $app->get($route, function ()  use ($app){
 		{
 		$target = $params['target'];
 
-		if(isset($params['target']))
+		if(isset($params['referrer']))
 			{
 			$referrer = $params['referrer'];
 			}
