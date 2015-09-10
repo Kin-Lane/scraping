@@ -72,8 +72,9 @@ $app->get($route, function ()  use ($app){
 
 				foreach ($OptionArray as $Option)
 					{
+					var_dump($Option);	
 					$optionvalue = get_attribute($Option,'value');
-					//echo "option value: " . $optionvalue . "<br />";
+					echo "option value: " . $optionvalue . "<br />";
 					$optionlabel = strip_tags($Option);
 					//echo "option label: " . $optionlabel . "<br />";
 
