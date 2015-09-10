@@ -136,7 +136,7 @@ $app->get($route, function ()  use ($app){
 		}
 		else
 			{
-			$app->response()->setStatus(500);
+			$app->status(500);
 			$ReturnObject['error'] = "No target provided!";
 			}
 		$app->response()->header("Content-Type", "application/json");
