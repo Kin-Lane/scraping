@@ -72,7 +72,7 @@ $app->get($route, function ()  use ($app){
 
 				foreach ($OptionArray as $Option)
 					{
-					//var_dump($Option);
+					var_dump($Option);
 					//$optionvalue = get_attribute($Option,'value');
 					$Begin_Tag = "value=".chr(34);
 					$End_Tag = chr(34);
