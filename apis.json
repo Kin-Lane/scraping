@@ -31,10 +31,6 @@
         {
           "type": "x-postman",
           "url": "https://kin-lane.github.io/scraping/postman.json"
-        },
-        {
-          "type": "x-apimatic-sdks",
-          "url": "https://kin-lane.github.io/scraping/code/"
         }
       ],
       "contact": [
