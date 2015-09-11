@@ -110,7 +110,12 @@ $app->get($route, function ()  use ($app){
 			foreach ($InputArray as $Input)
 				{
 
-				$inputid = get_attribute($Input,'id');
+				$Begin_Tag = 'id="';
+				$End_Tag = '"';
+				$inputid = return_between($Input, $Begin_Tag, $End_Tag, EXCL);
+				$inputid = str_replace(chr(34),"",$inputid);
+
+				//$inputid = get_attribute($Input,'id');
 				//echo "input id: " . $inputid . "<br />";
 				$pos = strpos($inputid, '=');
 				if ($pos !== false)
@@ -118,7 +123,12 @@ $app->get($route, function ()  use ($app){
 					$inputid = "no id";
 					}
 
-				$inputname = get_attribute($Input,'name');
+				$Begin_Tag = 'name="';
+				$End_Tag = '"';
+				$inputname = return_between($Input, $Begin_Tag, $End_Tag, EXCL);
+				$inputname = str_replace(chr(34),"",$inputname);
+
+				//$inputname = get_attribute($Input,'name');
 				//echo "input name: " . $inputname . "<br />";
 				$pos = strpos($inputname, '=');
 				if ($pos !== false)
