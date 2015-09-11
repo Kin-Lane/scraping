@@ -141,7 +141,7 @@ $app->get($route, function ()  use ($app){
 
 				$inputvalue = get_attribute($Input,'value');
 				//echo "input value: " . $inputvalue . "<br />";
-				$pos = strpos($inputvalue, '=');
+				$pos = strpos($inputvalue, 'html');
 				if ($pos !== false)
 					{
 					}
