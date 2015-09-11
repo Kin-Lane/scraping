@@ -76,7 +76,8 @@ $app->get($route, function ()  use ($app){
 					//$optionvalue = get_attribute($Option,'value');
 					$Begin_Tag = ' value=';
 					$End_Tag = '>';
-					$optionvalue = return_between($Option, $Begin_Tag, $End_Tag, INCL);
+					$optionvalue = return_between($Option, $Begin_Tag, $End_Tag, EXCL);
+					$optionvalue = str_replace(chr(34),"",$optionvalue);
 
 					//echo "option value: " . $optionvalue . "<br />";
 					$optionlabel = strip_tags($Option);
