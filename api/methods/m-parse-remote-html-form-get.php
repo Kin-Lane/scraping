@@ -85,10 +85,16 @@ $app->get($route, function ()  use ($app){
 
 					if($optionvalue == ''){ $optionvalue = $optionlabel; }
 
-					$OptionResults = array();
-					$OptionResults['value'] = $optionvalue;
-					$OptionResults['label'] = $optionlabel;
-
+					$pos = strpos($inputid, '--');
+					if ($pos !== false)
+						{
+						}
+					else
+						{
+						$OptionResults = array();
+						$OptionResults['value'] = $optionvalue;
+						$OptionResults['label'] = $optionlabel;
+						}
 					array_push($SelectResults['options'], $OptionResults);
 
 					}
