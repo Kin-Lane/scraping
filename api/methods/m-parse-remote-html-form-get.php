@@ -152,8 +152,9 @@ $app->get($route, function ()  use ($app){
 					$InputResults['name'] = $inputname;
 					$InputResults['type'] = $inputtype;
 					$InputResults['value'] = $inputvalue;
+					array_push($FormResults['inputs'], $InputResults);
 					}
-				array_push($FormResults['inputs'], $InputResults);
+
 				}
 
 			$HowManyFields = $HowManyInput + $HowManySelect;
