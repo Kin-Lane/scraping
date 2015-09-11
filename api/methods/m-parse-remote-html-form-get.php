@@ -74,7 +74,7 @@ $app->get($route, function ()  use ($app){
 					{
 					//var_dump($Option);
 					//$optionvalue = get_attribute($Option,'value');
-					$Begin_Tag = "value";
+					$Begin_Tag = "value=".chr(34);
 					$End_Tag = chr(34);
 					$optionvalue = return_between($Option, $Begin_Tag, $End_Tag, INCL);
 
