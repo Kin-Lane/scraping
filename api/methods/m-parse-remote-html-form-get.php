@@ -72,17 +72,17 @@ $app->get($route, function ()  use ($app){
 
 				foreach ($OptionArray as $Option)
 					{
-					var_dump($Option);
+					//var_dump($Option);
 					//$optionvalue = get_attribute($Option,'value');
-					$Begin_Tag = "value=".chr(34);
-					$End_Tag = chr(34);
+					$Begin_Tag = 'value="';
+					$End_Tag = '"';
 					$optionvalue = return_between($Option, $Begin_Tag, $End_Tag, INCL);
 
 					//echo "option value: " . $optionvalue . "<br />";
 					$optionlabel = strip_tags($Option);
 					//echo "option label: " . $optionlabel . "<br />";
 
-					if($optionvalue==''){ $optionvalue = $optionlabel; }
+					if($optionvalue == ''){ $optionvalue = $optionlabel; }
 
 					$OptionResults = array();
 					$OptionResults['value'] = $optionvalue;
