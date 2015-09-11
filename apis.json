@@ -1,43 +1,44 @@
 {
-  "name": "Kin Lane - API",
-  "description": "This is my default API API (inception man!), using it to manage APIs. It is a Stack Network API resource, with supporting docker container for the API.",
-  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png",
+  "name": "Kin Lane - Scraping",
+  "description": "This is my scraping API, using it to manage all the utilities I use for scraping of content.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-harvester.jpg",
   "tags": [
-    "application programming interface",
+    "Application Programming Interface",
     "API",
-    "API"
+    "Scraping"
   ],
-  "created": "2014-04-07",
-  "modified": "2014-07-09",
-  "url": "https://kin-lane.github.io/api/apis.json",
+  "created": "2015-09-10",
+  "modified": "2015-09-10",
+  "url": "https://kin-lane.github.io/scraping/apis.json",
   "SpecificationVersion": "0.14",
   "apis": [
     {
-      "name": "API",
-      "description": "The system I use to manage all the APIs that I track on as part of the API Evangelist network.",
-      "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png",
-      "humanURL": "https://kin-lane.github.io/api/",
-      "baseURL": "http://api.api.kinlane.com",
+      "name": "Scraping",
+      "description": "This is my scraping API, using it to manage all the utilities I use for scraping of content.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-harvester.jpg",
+      "humanURL": "https://kin-lane.github.io/scraping/",
+      "baseURL": "http://scraping.api.kinlane.com",
       "tags": [
+        "Application Programming Interface",
         "API",
-        "Application Programming Interface"
+        "Scraping"
       ],
       "properties": [
         {
           "type": "swagger",
-          "url": "https://kin-lane.github.io/api/swagger.json"
+          "url": "https://kin-lane.github.io/scraping/swagger.json"
         },
         {
           "type": "x-postman",
-          "url": "https://kin-lane.github.io/api/postman.json"
+          "url": "https://kin-lane.github.io/scraping/postman.json"
         },
         {
           "type": "x-apimatic-sdks",
-          "url": "https://kin-lane.github.io/api/code/"
+          "url": "https://kin-lane.github.io/scraping/code/"
         },
         {
           "type": "x-api-science",
-          "url": "https://kin-lane.github.io/api/status/"
+          "url": "https://kin-lane.github.io/scraping/status/"
         }
       ],
       "contact": [
