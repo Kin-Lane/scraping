@@ -1,4 +1,4 @@
-[{
+{
 	"name": "Kin Lane Scraping API",
 	"description": "Scraping of content and data that you legally have access to is a common way of acquiring what you need to deploy APIs. I am slowly converting my scraping tools into individual endpoints, and making available here via my scraping API stack. This API will grow as I have new needs for acquiring content, and is something that others will hopefully have a need for too.",
 	"image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-harvester.jpg",
@@ -6,7 +6,7 @@
 	"tags": ["Kin Lane Scraping API"],
 	"created": "2016-04-04",
 	"modified": "2016-04-04",
-	"url": "https://kin-lane.github.io/scraping/"
+	"url": "https://kin-lane.github.io/scraping/",
 	"specificationVersion": "0.14",
 	"apis": [{
 		"name": "Kin Lane Scraping API",
@@ -117,4 +117,4 @@
 		"x-twitter": "apievangelist",
 		"email": "info@apievangelist.com"
 	}]
-}]
+}
